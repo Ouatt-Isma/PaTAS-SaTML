@@ -1,0 +1,12 @@
+# Datasets are downloaded on first use (see README, "Data").
+data/
+# Trained scenario caches of tests/test_mnist_poisoned.py (retrained by
+# scripts/run_patchsize.sh); the archived JSON summaries under results/ are
+# tracked, the per-seed model pickles are large and optional.
+results/NN_Train_*/
+results/PTAS_Eval_*/
+results/ConvAttr_*/models/
+results/ConvMulti_*/models/
+__pycache__/
+*.pyc
+.pytest_cache/

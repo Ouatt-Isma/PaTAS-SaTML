@@ -1,0 +1,14 @@
+[conv] device cuda (NVIDIA A100-SXM4-80GB)
+[conv] CLEAN CONTROL: no trigger, no label swap; attack numbers below are not meaningful
+[conv] cifar10: 50000 train, 3 channel(s), untrusted 33%, trigger 4x4 over 48 input positions
+[conv] seed 0: clean 88.40% attack 0.30%  |  flagged 0 (0/48 trigger, ranks 153-2682)  ->  masked clean 88.40% attack 0.30%
+[conv] seed 1: clean 87.68% attack 0.20%  |  flagged 0 (0/48 trigger, ranks 216-2839)  ->  masked clean 87.68% attack 0.20%
+[conv] seed 2: clean 88.12% attack 0.25%  |  flagged 0 (0/48 trigger, ranks 78-2597)  ->  masked clean 88.12% attack 0.25%
+
+                               clean acc    attack success
+  undefended                 88.07±0.30         0.25±0.04 
+  masked (ours)              88.07±0.30         0.25±0.04 
+  floor (clean inputs)       88.07±0.30         0.25±0.07 
+  untrusted share: trigger 0.334 vs live 0.334   trigger positions found 0.0/48 (live 48.0/48)
+
+[conv] saved results/ConvAttr_cifar10_p4_resnet18_lp0_clean/summary.json

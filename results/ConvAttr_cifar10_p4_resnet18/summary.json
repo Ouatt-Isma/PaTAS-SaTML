@@ -1,0 +1,21 @@
+{
+  "dataset": "cifar10",
+  "patch": 4,
+  "epochs": 40,
+  "width": 16,
+  "k": 8.0,
+  "rows": [
+    {
+      "seed": 2,
+      "clean": 0.8772,
+      "asr": 0.9935,
+      "floor": 0.004,
+      "flagged": 69,
+      "trigger_found": 43,
+      "masked_clean": 0.8743,
+      "masked_asr": 0.0015,
+      "share_trigger": 0.42503271637320533,
+      "share_live": 0.3094147273315318
+    }
+  ]
+}

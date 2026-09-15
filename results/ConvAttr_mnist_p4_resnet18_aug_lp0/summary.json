@@ -1,0 +1,48 @@
+{
+  "dataset": "mnist",
+  "patch": 4,
+  "epochs": 30,
+  "width": 16,
+  "k": 8.0,
+  "rows": [
+    {
+      "seed": 0,
+      "clean": 0.9927,
+      "asr": 1.0,
+      "floor": 0.0,
+      "flagged": 34,
+      "trigger_found": 15,
+      "masked_clean": 0.9928,
+      "masked_asr": 0.0,
+      "share_trigger": 0.9962626040953059,
+      "share_live": 0.24291393280591322,
+      "trigger_live": 15
+    },
+    {
+      "seed": 1,
+      "clean": 0.9924,
+      "asr": 1.0,
+      "floor": 0.0,
+      "flagged": 35,
+      "trigger_found": 16,
+      "masked_clean": 0.9924,
+      "masked_asr": 0.0,
+      "share_trigger": 0.9979077262485988,
+      "share_live": 0.2553537260127795,
+      "trigger_live": 16
+    },
+    {
+      "seed": 2,
+      "clean": 0.9921,
+      "asr": 1.0,
+      "floor": 0.0,
+      "flagged": 27,
+      "trigger_found": 15,
+      "masked_clean": 0.9921,
+      "masked_asr": 0.0009910802775024777,
+      "share_trigger": 0.9970986890215188,
+      "share_live": 0.25107971863240264,
+      "trigger_live": 15
+    }
+  ]
+}

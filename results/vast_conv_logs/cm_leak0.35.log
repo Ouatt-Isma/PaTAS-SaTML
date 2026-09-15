@@ -1,0 +1,46 @@
+[cmulti] device cuda
+(60000, 28, 28)
+[cmulti] mnist: sources A 35961 audited, B 9039 unvetted (classes [4, 7]), C 15000 compromised; 3884 poisoned, leak 0.35
+
+[cmulti] seed 0: undefended clean 99.61%  B-class 99.90%  attack 99.95%
+[cmulti] seed 0: the opinion's rule selects 67 of 783 live positions; every criterion gets that budget
+[cmulti]   opinion      clean 99.60%  B-class 99.90%  attack 0.00%  trigger 100%  ranks 18-59
+[cmulti]   scalar       clean 99.59%  B-class 99.85%  attack 0.00%  trigger 88%  ranks 35-94
+[cmulti]   scalar-proj  clean 99.60%  B-class 99.90%  attack 0.00%  trigger 100%  ranks 5-59
+[cmulti]   drop-compromised (retrained) clean 99.67%  attack 99.69%
+
+[cmulti] seed 1: undefended clean 99.57%  B-class 99.80%  attack 100.00%
+[cmulti] seed 1: the opinion's rule selects 55 of 783 live positions; every criterion gets that budget
+[cmulti]   opinion      clean 99.57%  B-class 99.80%  attack 0.00%  trigger 81%  ranks 16-84
+[cmulti]   scalar       clean 99.57%  B-class 99.80%  attack 98.16%  trigger 12%  ranks 46-162
+[cmulti]   scalar-proj  clean 99.57%  B-class 99.80%  attack 0.00%  trigger 88%  ranks 4-92
+[cmulti]   drop-compromised (retrained) clean 99.54%  attack 99.90%
+
+[cmulti] seed 2: undefended clean 99.61%  B-class 99.65%  attack 100.00%
+[cmulti] seed 2: the opinion's rule selects 61 of 783 live positions; every criterion gets that budget
+[cmulti]   opinion      clean 99.59%  B-class 99.65%  attack 0.00%  trigger 100%  ranks 22-59
+[cmulti]   scalar       clean 99.61%  B-class 99.65%  attack 99.05%  trigger 12%  ranks 59-110
+[cmulti]   scalar-proj  clean 99.59%  B-class 99.65%  attack 0.00%  trigger 100%  ranks 4-48
+[cmulti]   drop-compromised (retrained) clean 99.51%  attack 99.85%
+
+[cmulti] seed 3: undefended clean 99.56%  B-class 99.75%  attack 99.95%
+[cmulti] seed 3: the opinion's rule selects 66 of 783 live positions; every criterion gets that budget
+[cmulti]   opinion      clean 99.56%  B-class 99.75%  attack 0.00%  trigger 100%  ranks 21-50
+[cmulti]   scalar       clean 99.56%  B-class 99.75%  attack 0.05%  trigger 75%  ranks 42-84
+[cmulti]   scalar-proj  clean 99.56%  B-class 99.75%  attack 0.00%  trigger 100%  ranks 6-47
+[cmulti]   drop-compromised (retrained) clean 99.56%  attack 99.80%
+
+[cmulti] seed 4: undefended clean 99.56%  B-class 99.70%  attack 99.95%
+[cmulti] seed 4: the opinion's rule selects 67 of 783 live positions; every criterion gets that budget
+[cmulti]   opinion      clean 99.58%  B-class 99.70%  attack 0.20%  trigger 88%  ranks 25-74
+[cmulti]   scalar       clean 99.58%  B-class 99.70%  attack 8.94%  trigger 38%  ranks 47-128
+[cmulti]   scalar-proj  clean 99.58%  B-class 99.70%  attack 0.20%  trigger 88%  ranks 3-77
+[cmulti]   drop-compromised (retrained) clean 99.59%  attack 99.90%
+
+  leak 0.35   criterion                  clean          attack  trigger
+            undefended            99.58±0.02      99.97±0.03       0%
+            opinion@thr           99.58±0.01       0.04±0.08      94%
+            scalar@thr            99.58±0.02      41.24±46.95      45%
+            scalar-proj@thr       99.58±0.01       0.04±0.08      95%
+            drop-compromised      99.57±0.05      99.83±0.08     nan%
+[cmulti] saved results/ConvMulti_mnist_resnet18_cf0.25/summary_leak0.35.json

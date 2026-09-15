@@ -1,0 +1,45 @@
+{
+  "dataset": "fashion",
+  "patch": 4,
+  "epochs": 15,
+  "width": 16,
+  "k": 8.0,
+  "rows": [
+    {
+      "seed": 0,
+      "clean": 0.9007,
+      "asr": 0.9935,
+      "floor": 0.001,
+      "flagged": 7,
+      "trigger_found": 7,
+      "masked_clean": 0.9003,
+      "masked_asr": 0.48350000000000004,
+      "share_trigger": 0.8491396037945413,
+      "share_live": 0.26210832133962525
+    },
+    {
+      "seed": 1,
+      "clean": 0.8982,
+      "asr": 0.9924999999999999,
+      "floor": 0.0025,
+      "flagged": 6,
+      "trigger_found": 6,
+      "masked_clean": 0.898,
+      "masked_asr": 0.9079999999999999,
+      "share_trigger": 0.8733575594973807,
+      "share_live": 0.22762153872092344
+    },
+    {
+      "seed": 2,
+      "clean": 0.8996,
+      "asr": 0.993,
+      "floor": 0.0005,
+      "flagged": 3,
+      "trigger_found": 3,
+      "masked_clean": 0.8995,
+      "masked_asr": 0.5065,
+      "share_trigger": 0.8693298604655468,
+      "share_live": 0.2610683606881242
+    }
+  ]
+}

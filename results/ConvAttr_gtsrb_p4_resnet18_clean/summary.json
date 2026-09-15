@@ -1,0 +1,48 @@
+{
+  "dataset": "gtsrb",
+  "patch": 4,
+  "epochs": 30,
+  "width": 16,
+  "k": 8.0,
+  "rows": [
+    {
+      "seed": 0,
+      "clean": 0.9784639746634997,
+      "asr": 0.0,
+      "floor": 0.0,
+      "flagged": 0,
+      "trigger_found": 0,
+      "masked_clean": 0.9784639746634997,
+      "masked_asr": 0.0,
+      "share_trigger": 0.33571247293404183,
+      "share_live": 0.33081809285193187,
+      "trigger_live": 16
+    },
+    {
+      "seed": 1,
+      "clean": 0.9784639746634997,
+      "asr": 0.0,
+      "floor": 0.0,
+      "flagged": 0,
+      "trigger_found": 0,
+      "masked_clean": 0.9784639746634997,
+      "masked_asr": 0.0,
+      "share_trigger": 0.333944414486051,
+      "share_live": 0.3333534246299188,
+      "trigger_live": 16
+    },
+    {
+      "seed": 2,
+      "clean": 0.9822644497228821,
+      "asr": 0.0,
+      "floor": 0.0,
+      "flagged": 0,
+      "trigger_found": 0,
+      "masked_clean": 0.9822644497228821,
+      "masked_asr": 0.0,
+      "share_trigger": 0.3378600141002389,
+      "share_live": 0.3341816595799407,
+      "trigger_live": 16
+    }
+  ]
+}

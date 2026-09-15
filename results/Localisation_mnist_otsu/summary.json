@@ -1,0 +1,293 @@
+{
+  "dataset": "mnist",
+  "rule": "otsu",
+  "k": 8.0,
+  "untrusted_opinion": "0,0,1",
+  "epochs": 20,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "rows": [
+    {
+      "condition": "Backdoored",
+      "key": "backdoored",
+      "seed": 0,
+      "clean_acc": 0.9774,
+      "masked_acc": 0.9746,
+      "flagged": 19,
+      "trigger_found": 16,
+      "n_trigger": 16,
+      "auroc": 1.0,
+      "ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "condition": "Backdoored",
+      "key": "backdoored",
+      "seed": 1,
+      "clean_acc": 0.9769,
+      "masked_acc": 0.9764,
+      "flagged": 16,
+      "trigger_found": 16,
+      "n_trigger": 16,
+      "auroc": 1.0,
+      "ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "condition": "Backdoored",
+      "key": "backdoored",
+      "seed": 2,
+      "clean_acc": 0.9755,
+      "masked_acc": 0.9758,
+      "flagged": 21,
+      "trigger_found": 16,
+      "n_trigger": 16,
+      "auroc": 1.0,
+      "ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "condition": "Clean, 784-128-10",
+      "key": "clean128",
+      "seed": 0,
+      "clean_acc": 0.9789,
+      "masked_acc": 0.9797,
+      "flagged": 18,
+      "trigger_found": null,
+      "n_trigger": null,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "Clean, 784-128-10",
+      "key": "clean128",
+      "seed": 1,
+      "clean_acc": 0.9769,
+      "masked_acc": 0.977,
+      "flagged": 21,
+      "trigger_found": null,
+      "n_trigger": null,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "Clean, 784-128-10",
+      "key": "clean128",
+      "seed": 2,
+      "clean_acc": 0.9788,
+      "masked_acc": 0.9785,
+      "flagged": 15,
+      "trigger_found": null,
+      "n_trigger": null,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "Clean, 784-512-10",
+      "key": "clean512",
+      "seed": 0,
+      "clean_acc": 0.9804,
+      "masked_acc": 0.9794,
+      "flagged": 19,
+      "trigger_found": null,
+      "n_trigger": null,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "Clean, 784-512-10",
+      "key": "clean512",
+      "seed": 1,
+      "clean_acc": 0.9798,
+      "masked_acc": 0.9799,
+      "flagged": 18,
+      "trigger_found": null,
+      "n_trigger": null,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "Clean, 784-512-10",
+      "key": "clean512",
+      "seed": 2,
+      "clean_acc": 0.9808,
+      "masked_acc": 0.9812,
+      "flagged": 21,
+      "trigger_found": null,
+      "n_trigger": null,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "Label flip only, no trigger",
+      "key": "fliponly",
+      "seed": 0,
+      "clean_acc": 0.9403,
+      "masked_acc": 0.9385,
+      "flagged": 28,
+      "trigger_found": null,
+      "n_trigger": 16,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "Label flip only, no trigger",
+      "key": "fliponly",
+      "seed": 1,
+      "clean_acc": 0.9495,
+      "masked_acc": 0.9476,
+      "flagged": 11,
+      "trigger_found": null,
+      "n_trigger": 16,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "Label flip only, no trigger",
+      "key": "fliponly",
+      "seed": 2,
+      "clean_acc": 0.9598,
+      "masked_acc": 0.9595,
+      "flagged": 23,
+      "trigger_found": null,
+      "n_trigger": 16,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "Trigger only, labels correct",
+      "key": "patchonly",
+      "seed": 0,
+      "clean_acc": 0.9768,
+      "masked_acc": 0.9756,
+      "flagged": 22,
+      "trigger_found": 16,
+      "n_trigger": 16,
+      "auroc": 1.0,
+      "ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "condition": "Trigger only, labels correct",
+      "key": "patchonly",
+      "seed": 1,
+      "clean_acc": 0.9781,
+      "masked_acc": 0.9756,
+      "flagged": 18,
+      "trigger_found": 16,
+      "n_trigger": 16,
+      "auroc": 1.0,
+      "ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "condition": "Trigger only, labels correct",
+      "key": "patchonly",
+      "seed": 2,
+      "clean_acc": 0.973,
+      "masked_acc": 0.9745,
+      "flagged": 21,
+      "trigger_found": 16,
+      "n_trigger": 16,
+      "auroc": 0.9996931260229132,
+      "ranks": [
+        0,
+        17
+      ]
+    },
+    {
+      "condition": "Label-noise trained",
+      "key": "labelnoise",
+      "seed": 0,
+      "clean_acc": 0.9513,
+      "masked_acc": 0.9513,
+      "flagged": 0,
+      "trigger_found": null,
+      "n_trigger": null,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "Label-noise trained",
+      "key": "labelnoise",
+      "seed": 1,
+      "clean_acc": 0.9479,
+      "masked_acc": 0.9479,
+      "flagged": 0,
+      "trigger_found": null,
+      "n_trigger": null,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "Label-noise trained",
+      "key": "labelnoise",
+      "seed": 2,
+      "clean_acc": 0.9472,
+      "masked_acc": 0.9472,
+      "flagged": 0,
+      "trigger_found": null,
+      "n_trigger": null,
+      "auroc": NaN,
+      "ranks": null
+    },
+    {
+      "condition": "No provenance used (control)",
+      "key": "noprovenance",
+      "seed": 0,
+      "clean_acc": 0.9761,
+      "masked_acc": 0.9761,
+      "flagged": 0,
+      "trigger_found": 0,
+      "n_trigger": 16,
+      "auroc": 0.5,
+      "ranks": [
+        0,
+        461
+      ]
+    },
+    {
+      "condition": "No provenance used (control)",
+      "key": "noprovenance",
+      "seed": 1,
+      "clean_acc": 0.9777,
+      "masked_acc": 0.9777,
+      "flagged": 0,
+      "trigger_found": 0,
+      "n_trigger": 16,
+      "auroc": 0.5,
+      "ranks": [
+        0,
+        490
+      ]
+    },
+    {
+      "condition": "No provenance used (control)",
+      "key": "noprovenance",
+      "seed": 2,
+      "clean_acc": 0.9761,
+      "masked_acc": 0.9761,
+      "flagged": 0,
+      "trigger_found": 0,
+      "n_trigger": 16,
+      "auroc": 0.5,
+      "ranks": [
+        0,
+        487
+      ]
+    }
+  ]
+}

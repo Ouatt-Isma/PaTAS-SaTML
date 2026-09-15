@@ -1,0 +1,368 @@
+{
+  "dataset": "mnist",
+  "arch": [
+    128
+  ],
+  "patch": 4,
+  "untrusted_tail": 0.3333333333333333,
+  "epochs": 20,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "threshold": 0.25,
+  "rows": [
+    {
+      "seed": 0,
+      "arm": "undefended",
+      "dropped": 0,
+      "retrained": false,
+      "clean_acc": 0.9767,
+      "asr": 0.9552053439710663,
+      "poison_recall": NaN
+    },
+    {
+      "seed": 0,
+      "arm": "prune (ours)",
+      "dropped": 18,
+      "retrained": false,
+      "clean_acc": 0.9741,
+      "asr": 0.0,
+      "poison_recall": 1.0
+    },
+    {
+      "seed": 0,
+      "arm": "drop-source",
+      "dropped": 20000,
+      "retrained": true,
+      "clean_acc": 0.9745,
+      "asr": 0.0004955401387512388,
+      "poison_recall": 1.0
+    },
+    {
+      "seed": 0,
+      "arm": "activation clustering",
+      "dropped": 0,
+      "retrained": true,
+      "clean_acc": 0.9767,
+      "asr": 0.9552053439710663,
+      "poison_recall": 0.0
+    },
+    {
+      "seed": 0,
+      "arm": "influence 5%",
+      "dropped": 3000,
+      "retrained": true,
+      "clean_acc": 0.971,
+      "asr": 0.9511882618024419,
+      "poison_recall": 0.03270223752151463
+    },
+    {
+      "seed": 0,
+      "arm": "spectral 5%",
+      "dropped": 3000,
+      "retrained": true,
+      "clean_acc": 0.9777,
+      "asr": 0.966761050338188,
+      "poison_recall": 0.0034423407917383822
+    },
+    {
+      "seed": 0,
+      "arm": "random-samples 5%",
+      "dropped": 3000,
+      "retrained": true,
+      "clean_acc": 0.9783,
+      "asr": 0.9664765544338946,
+      "poison_recall": 0.03442340791738382
+    },
+    {
+      "seed": 0,
+      "arm": "influence 10%",
+      "dropped": 6000,
+      "retrained": true,
+      "clean_acc": 0.964,
+      "asr": 0.95212658102133,
+      "poison_recall": 0.08605851979345955
+    },
+    {
+      "seed": 0,
+      "arm": "spectral 10%",
+      "dropped": 6000,
+      "retrained": true,
+      "clean_acc": 0.9751,
+      "asr": 0.970857274094734,
+      "poison_recall": 0.01549053356282272
+    },
+    {
+      "seed": 0,
+      "arm": "random-samples 10%",
+      "dropped": 6000,
+      "retrained": true,
+      "clean_acc": 0.9772,
+      "asr": 0.9597707273370563,
+      "poison_recall": 0.12564543889845095
+    },
+    {
+      "seed": 0,
+      "arm": "influence 15%",
+      "dropped": 9000,
+      "retrained": true,
+      "clean_acc": 0.9586,
+      "asr": 0.9445088152349108,
+      "poison_recall": 0.13080895008605853
+    },
+    {
+      "seed": 0,
+      "arm": "spectral 15%",
+      "dropped": 9000,
+      "retrained": true,
+      "clean_acc": 0.9692,
+      "asr": 0.965353571509856,
+      "poison_recall": 0.029259896729776247
+    },
+    {
+      "seed": 0,
+      "arm": "random-samples 15%",
+      "dropped": 9000,
+      "retrained": true,
+      "clean_acc": 0.9769,
+      "asr": 0.9682212902251346,
+      "poison_recall": 0.13253012048192772
+    },
+    {
+      "seed": 1,
+      "arm": "undefended",
+      "dropped": 0,
+      "retrained": false,
+      "clean_acc": 0.9743,
+      "asr": 0.9570819824088423,
+      "poison_recall": NaN
+    },
+    {
+      "seed": 1,
+      "arm": "prune (ours)",
+      "dropped": 18,
+      "retrained": false,
+      "clean_acc": 0.9739,
+      "asr": 0.0005219206680584551,
+      "poison_recall": 1.0
+    },
+    {
+      "seed": 1,
+      "arm": "drop-source",
+      "dropped": 20000,
+      "retrained": true,
+      "clean_acc": 0.9745,
+      "asr": 0.0005219206680584551,
+      "poison_recall": 1.0
+    },
+    {
+      "seed": 1,
+      "arm": "activation clustering",
+      "dropped": 0,
+      "retrained": true,
+      "clean_acc": 0.9743,
+      "asr": 0.9570819824088423,
+      "poison_recall": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "influence 5%",
+      "dropped": 3000,
+      "retrained": true,
+      "clean_acc": 0.9701,
+      "asr": 0.9590905234931545,
+      "poison_recall": 0.039586919104991396
+    },
+    {
+      "seed": 1,
+      "arm": "spectral 5%",
+      "dropped": 3000,
+      "retrained": true,
+      "clean_acc": 0.9751,
+      "asr": 0.9699980964637677,
+      "poison_recall": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "random-samples 5%",
+      "dropped": 3000,
+      "retrained": true,
+      "clean_acc": 0.9757,
+      "asr": 0.9708045130361196,
+      "poison_recall": 0.06196213425129088
+    },
+    {
+      "seed": 1,
+      "arm": "influence 10%",
+      "dropped": 6000,
+      "retrained": true,
+      "clean_acc": 0.9633,
+      "asr": 0.9283820355837131,
+      "poison_recall": 0.09294320137693632
+    },
+    {
+      "seed": 1,
+      "arm": "spectral 10%",
+      "dropped": 6000,
+      "retrained": true,
+      "clean_acc": 0.9729,
+      "asr": 0.9674676347113971,
+      "poison_recall": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "random-samples 10%",
+      "dropped": 6000,
+      "retrained": true,
+      "clean_acc": 0.9773,
+      "asr": 0.9689014940690364,
+      "poison_recall": 0.10671256454388985
+    },
+    {
+      "seed": 1,
+      "arm": "influence 15%",
+      "dropped": 9000,
+      "retrained": true,
+      "clean_acc": 0.9574,
+      "asr": 0.9482414014992417,
+      "poison_recall": 0.14113597246127366
+    },
+    {
+      "seed": 1,
+      "arm": "spectral 15%",
+      "dropped": 9000,
+      "retrained": true,
+      "clean_acc": 0.9643,
+      "asr": 0.9701299991103037,
+      "poison_recall": 0.0
+    },
+    {
+      "seed": 1,
+      "arm": "random-samples 15%",
+      "dropped": 9000,
+      "retrained": true,
+      "clean_acc": 0.9745,
+      "asr": 0.9632131277790077,
+      "poison_recall": 0.1686746987951807
+    },
+    {
+      "seed": 2,
+      "arm": "undefended",
+      "dropped": 0,
+      "retrained": false,
+      "clean_acc": 0.9783,
+      "asr": 0.959506922043984,
+      "poison_recall": NaN
+    },
+    {
+      "seed": 2,
+      "arm": "prune (ours)",
+      "dropped": 20,
+      "retrained": false,
+      "clean_acc": 0.9768,
+      "asr": 0.0005219206680584551,
+      "poison_recall": 1.0
+    },
+    {
+      "seed": 2,
+      "arm": "drop-source",
+      "dropped": 20000,
+      "retrained": true,
+      "clean_acc": 0.9721,
+      "asr": 0.0,
+      "poison_recall": 1.0
+    },
+    {
+      "seed": 2,
+      "arm": "activation clustering",
+      "dropped": 0,
+      "retrained": true,
+      "clean_acc": 0.9783,
+      "asr": 0.959506922043984,
+      "poison_recall": 0.0
+    },
+    {
+      "seed": 2,
+      "arm": "influence 5%",
+      "dropped": 3000,
+      "retrained": true,
+      "clean_acc": 0.9697,
+      "asr": 0.9601343648292715,
+      "poison_recall": 0.04991394148020654
+    },
+    {
+      "seed": 2,
+      "arm": "spectral 5%",
+      "dropped": 3000,
+      "retrained": true,
+      "clean_acc": 0.9767,
+      "asr": 0.9517893240584221,
+      "poison_recall": 0.0
+    },
+    {
+      "seed": 2,
+      "arm": "random-samples 5%",
+      "dropped": 3000,
+      "retrained": true,
+      "clean_acc": 0.9766,
+      "asr": 0.9679631748501483,
+      "poison_recall": 0.04991394148020654
+    },
+    {
+      "seed": 2,
+      "arm": "influence 10%",
+      "dropped": 6000,
+      "retrained": true,
+      "clean_acc": 0.9641,
+      "asr": 0.9546570427737006,
+      "poison_recall": 0.10327022375215146
+    },
+    {
+      "seed": 2,
+      "arm": "spectral 10%",
+      "dropped": 6000,
+      "retrained": true,
+      "clean_acc": 0.9751,
+      "asr": 0.9618056489506757,
+      "poison_recall": 0.0
+    },
+    {
+      "seed": 2,
+      "arm": "random-samples 10%",
+      "dropped": 6000,
+      "retrained": true,
+      "clean_acc": 0.9756,
+      "asr": 0.9674940152407042,
+      "poison_recall": 0.09122203098106713
+    },
+    {
+      "seed": 2,
+      "arm": "influence 15%",
+      "dropped": 9000,
+      "retrained": true,
+      "clean_acc": 0.9576,
+      "asr": 0.9548680870081583,
+      "poison_recall": 0.1566265060240964
+    },
+    {
+      "seed": 2,
+      "arm": "spectral 15%",
+      "dropped": 9000,
+      "retrained": true,
+      "clean_acc": 0.972,
+      "asr": 0.9712793625636496,
+      "poison_recall": 0.0051635111876075735
+    },
+    {
+      "seed": 2,
+      "arm": "random-samples 15%",
+      "dropped": 9000,
+      "retrained": true,
+      "clean_acc": 0.9757,
+      "asr": 0.9686169981647428,
+      "poison_recall": 0.14457831325301204
+    }
+  ]
+}

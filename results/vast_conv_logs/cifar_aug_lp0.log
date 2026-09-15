@@ -1,0 +1,13 @@
+[conv] device cuda (NVIDIA A100-SXM4-80GB)
+[conv] cifar10: 50000 train, 3 channel(s), untrusted 33%, trigger 4x4 over 48 input positions
+[conv] seed 0: clean 94.05% attack 99.65%  |  flagged 0 (0/48 trigger, ranks 2660-3054)  ->  masked clean 94.05% attack 99.65%
+[conv] seed 1: clean 93.79% attack 99.30%  |  flagged 16 (8/48 trigger, ranks 0-2986)  ->  masked clean 90.96% attack 99.45%
+[conv] seed 2: clean 93.87% attack 99.60%  |  flagged 0 (0/48 trigger, ranks 33-3048)  ->  masked clean 93.87% attack 99.60%
+
+                               clean acc    attack success
+  undefended                 93.90±0.11        99.52±0.15 
+  masked (ours)              92.96±1.42        99.57±0.08 
+  floor (clean inputs)       93.90±0.11         0.43±0.16 
+  untrusted share: trigger 0.219 vs live 0.256   trigger positions found 2.7/48 (live 48.0/48)
+
+[conv] saved results/ConvAttr_cifar10_p4_resnet18_aug_lp0/summary.json

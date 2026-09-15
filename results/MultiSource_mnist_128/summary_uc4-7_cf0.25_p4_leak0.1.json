@@ -1,0 +1,182 @@
+{
+  "arch": [
+    128
+  ],
+  "epochs": 20,
+  "seeds": [
+    0,
+    1
+  ],
+  "scenario": "uc4-7_cf0.25_p4_leak0.1",
+  "threshold": 0.25,
+  "compromised_frac": 0.25,
+  "unknown_classes": [
+    4,
+    7
+  ],
+  "patch_size": 4,
+  "rows": [
+    {
+      "seed": 0,
+      "criterion": "opinion",
+      "budget": 0.05,
+      "clean_acc": 0.9624,
+      "asr": 0.0020876826722338203,
+      "unknown_class_acc": 0.9417910447761194,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 0,
+      "criterion": "scalar",
+      "budget": 0.05,
+      "clean_acc": 0.9633,
+      "asr": 0.001017460806809694,
+      "unknown_class_acc": 0.9338308457711443,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 0,
+      "criterion": "opinion",
+      "budget": 0.1,
+      "clean_acc": 0.8976,
+      "asr": 0.003078762949736298,
+      "unknown_class_acc": 0.8756218905472637,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 0,
+      "criterion": "scalar",
+      "budget": 0.1,
+      "clean_acc": 0.9126,
+      "asr": 0.0025040812230634106,
+      "unknown_class_acc": 0.8203980099502488,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 0,
+      "criterion": "opinion",
+      "budget": 0.15,
+      "clean_acc": 0.8008,
+      "asr": 0.0014866204162537165,
+      "unknown_class_acc": 0.8338308457711443,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 0,
+      "criterion": "scalar",
+      "budget": 0.15,
+      "clean_acc": 0.8406,
+      "asr": 0.0031051434790435144,
+      "unknown_class_acc": 0.7303482587064677,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 0,
+      "criterion": "opinion",
+      "budget": 0.2,
+      "clean_acc": 0.7655,
+      "asr": 0.0035215420298731043,
+      "unknown_class_acc": 0.8,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 0,
+      "criterion": "scalar",
+      "budget": 0.2,
+      "clean_acc": 0.7585,
+      "asr": 0.00989011216380343,
+      "unknown_class_acc": 0.599502487562189,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 0,
+      "criterion": "undefended",
+      "budget": 0.0,
+      "clean_acc": 0.9769,
+      "asr": 0.9903736931292687,
+      "unknown_class_acc": 0.9751243781094527,
+      "trigger_recall": 0.0
+    },
+    {
+      "seed": 1,
+      "criterion": "opinion",
+      "budget": 0.05,
+      "clean_acc": 0.9696,
+      "asr": 0.0020613021429266042,
+      "unknown_class_acc": 0.972636815920398,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 1,
+      "criterion": "scalar",
+      "budget": 0.05,
+      "clean_acc": 0.9669,
+      "asr": 0.004069843227238776,
+      "unknown_class_acc": 0.9482587064676616,
+      "trigger_recall": 0.9375
+    },
+    {
+      "seed": 1,
+      "criterion": "opinion",
+      "budget": 0.1,
+      "clean_acc": 0.9426,
+      "asr": 0.00654754392099497,
+      "unknown_class_acc": 0.9383084577114428,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 1,
+      "criterion": "scalar",
+      "budget": 0.1,
+      "clean_acc": 0.9284,
+      "asr": 0.002034921613619388,
+      "unknown_class_acc": 0.8472636815920398,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 1,
+      "criterion": "opinion",
+      "budget": 0.15,
+      "clean_acc": 0.8553,
+      "asr": 0.015077248396994895,
+      "unknown_class_acc": 0.8154228855721393,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 1,
+      "criterion": "scalar",
+      "budget": 0.15,
+      "clean_acc": 0.8402,
+      "asr": 0.00613114537016538,
+      "unknown_class_acc": 0.6238805970149254,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 1,
+      "criterion": "opinion",
+      "budget": 0.2,
+      "clean_acc": 0.7942,
+      "asr": 0.021498579589539657,
+      "unknown_class_acc": 0.7258706467661692,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 1,
+      "criterion": "scalar",
+      "budget": 0.2,
+      "clean_acc": 0.7832,
+      "asr": 0.008661607122536007,
+      "unknown_class_acc": 0.554228855721393,
+      "trigger_recall": 1.0
+    },
+    {
+      "seed": 1,
+      "criterion": "undefended",
+      "budget": 0.0,
+      "clean_acc": 0.9775,
+      "asr": 0.9897990114025959,
+      "unknown_class_acc": 0.9746268656716418,
+      "trigger_recall": 0.0
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "dataset": "cifar10",
+  "patch": 4,
+  "epochs": 40,
+  "width": 16,
+  "k": 8.0,
+  "rows": [
+    {
+      "seed": 0,
+      "clean": 0.9397,
+      "asr": 0.996,
+      "floor": 0.0055,
+      "flagged": 0,
+      "trigger_found": 0,
+      "masked_clean": 0.9397,
+      "masked_asr": 0.996,
+      "share_trigger": 0.12553682293939858,
+      "share_live": 0.2141335888927202,
+      "trigger_live": 48
+    },
+    {
+      "seed": 1,
+      "clean": 0.9385,
+      "asr": 0.992,
+      "floor": 0.006,
+      "flagged": 0,
+      "trigger_found": 0,
+      "masked_clean": 0.9385,
+      "masked_asr": 0.992,
+      "share_trigger": 0.363180936871744,
+      "share_live": 0.26445693326105474,
+      "trigger_live": 48
+    },
+    {
+      "seed": 2,
+      "clean": 0.9405,
+      "asr": 0.996,
+      "floor": 0.004,
+      "flagged": 0,
+      "trigger_found": 0,
+      "masked_clean": 0.9405,
+      "masked_asr": 0.996,
+      "share_trigger": 0.1456992046109892,
+      "share_live": 0.25533292760767456,
+      "trigger_live": 48
+    }
+  ]
+}

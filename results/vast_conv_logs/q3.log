@@ -1,0 +1,21 @@
+########## fashion_noaug  15:09
+[conv] device cuda (NVIDIA A100-SXM4-80GB)
+  0%|          | 0.00/26.4M [00:00<?, ?B/s] 14%|█▎        | 3.57M/26.4M [00:00<00:00, 35.5MB/s] 89%|████████▉ | 23.5M/26.4M [00:00<00:00, 131MB/s] 100%|██████████| 26.4M/26.4M [00:00<00:00, 114MB/s]
+  0%|          | 0.00/29.5k [00:00<?, ?B/s]100%|██████████| 29.5k/29.5k [00:00<00:00, 2.36MB/s]
+  0%|          | 0.00/4.42M [00:00<?, ?B/s] 82%|████████▏ | 3.64M/4.42M [00:00<00:00, 36.4MB/s]100%|██████████| 4.42M/4.42M [00:00<00:00, 42.6MB/s]
+  0%|          | 0.00/5.15k [00:00<?, ?B/s]100%|██████████| 5.15k/5.15k [00:00<00:00, 29.2MB/s]
+[FashionMNIST] cached raw arrays → data/fashion_all_flat.npz
+[FashionMNIST] cached normalization stats → data/fashion_norm.json
+Injected poison into 3950 examples in the training set (mode: both).
+[conv] fashion: 60000 train, 1 channel(s), untrusted 33%, trigger 4x4 over 16 input positions
+[conv] seed 0: clean 94.00% attack 99.90%  |  flagged 6 (5/16 trigger, ranks 0-4)  ->  masked clean 93.96% attack 67.50%
+[conv] seed 1: clean 93.71% attack 99.95%  |  flagged 5 (5/16 trigger, ranks 0-4)  ->  masked clean 93.71% attack 93.50%
+[conv] seed 2: clean 93.65% attack 99.95%  |  flagged 9 (5/16 trigger, ranks 0-4)  ->  masked clean 93.65% attack 91.20%
+
+                               clean acc    attack success
+  undefended                 93.79±0.15        99.93±0.02 
+  masked (ours)              93.77±0.13        84.07±11.75
+  floor (clean inputs)       93.79±0.15         0.03±0.02 
+  untrusted share: trigger 0.966 vs live 0.286   trigger positions found 5.0/16
+
+[conv] saved results/ConvAttr_fashion_p4_resnet18/summary.json

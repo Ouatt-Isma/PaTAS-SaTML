@@ -1,0 +1,310 @@
+{
+  "dataset": "mnist",
+  "arch": "resnet18",
+  "augment": false,
+  "epochs": 30,
+  "batch": 256,
+  "lr": 0.1,
+  "width": 16,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "patch_size": 4,
+  "pois_pair": [
+    6,
+    9
+  ],
+  "compromised_frac": 0.25,
+  "unknown_classes": [
+    4,
+    7
+  ],
+  "poison_leak": 0.5,
+  "evidence": 50.0,
+  "k": 8.0,
+  "rule": "mad",
+  "live_pct": 0.0,
+  "with_drop": true,
+  "device": "cuda",
+  "rows": [
+    {
+      "seed": 0,
+      "criterion": "undefended",
+      "clean_acc": 0.9957,
+      "unknown_class_acc": 0.9980099502487563,
+      "asr": 1.0,
+      "trigger_recall": 0.0
+    },
+    {
+      "seed": 0,
+      "criterion": "opinion@thr",
+      "n_selected": 63,
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9980099502487563,
+      "asr": 0.0,
+      "trigger_recall": 0.875,
+      "trigger_ranks": [
+        28,
+        73
+      ]
+    },
+    {
+      "seed": 0,
+      "criterion": "scalar@thr",
+      "n_selected": 63,
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9980099502487563,
+      "asr": 0.03553198665041764,
+      "trigger_recall": 0.4375,
+      "trigger_ranks": [
+        53,
+        136
+      ]
+    },
+    {
+      "seed": 0,
+      "criterion": "scalar-proj@thr",
+      "n_selected": 63,
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9980099502487563,
+      "asr": 0.0,
+      "trigger_recall": 0.875,
+      "trigger_ranks": [
+        13,
+        81
+      ]
+    },
+    {
+      "seed": 0,
+      "criterion": "drop-compromised",
+      "clean_acc": 0.9961,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.9994780793319415,
+      "trigger_recall": NaN
+    },
+    {
+      "seed": 1,
+      "criterion": "undefended",
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.9994780793319415,
+      "trigger_recall": 0.0
+    },
+    {
+      "seed": 1,
+      "criterion": "opinion@thr",
+      "n_selected": 54,
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.0,
+      "trigger_recall": 0.75,
+      "trigger_ranks": [
+        29,
+        95
+      ]
+    },
+    {
+      "seed": 1,
+      "criterion": "scalar@thr",
+      "n_selected": 54,
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.9994780793319415,
+      "trigger_recall": 0.0,
+      "trigger_ranks": [
+        63,
+        191
+      ]
+    },
+    {
+      "seed": 1,
+      "criterion": "scalar-proj@thr",
+      "n_selected": 54,
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.0,
+      "trigger_recall": 0.75,
+      "trigger_ranks": [
+        11,
+        108
+      ]
+    },
+    {
+      "seed": 1,
+      "criterion": "drop-compromised",
+      "clean_acc": 0.9966,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.9989561586638831,
+      "trigger_recall": NaN
+    },
+    {
+      "seed": 2,
+      "criterion": "undefended",
+      "clean_acc": 0.9953,
+      "unknown_class_acc": 0.9955223880597015,
+      "asr": 1.0,
+      "trigger_recall": 0.0
+    },
+    {
+      "seed": 2,
+      "criterion": "opinion@thr",
+      "n_selected": 55,
+      "clean_acc": 0.9954,
+      "unknown_class_acc": 0.9955223880597015,
+      "asr": 0.0005219206680584551,
+      "trigger_recall": 0.75,
+      "trigger_ranks": [
+        30,
+        64
+      ]
+    },
+    {
+      "seed": 2,
+      "criterion": "scalar@thr",
+      "n_selected": 55,
+      "clean_acc": 0.9953,
+      "unknown_class_acc": 0.9955223880597015,
+      "asr": 1.0,
+      "trigger_recall": 0.0,
+      "trigger_ranks": [
+        63,
+        129
+      ]
+    },
+    {
+      "seed": 2,
+      "criterion": "scalar-proj@thr",
+      "n_selected": 55,
+      "clean_acc": 0.9954,
+      "unknown_class_acc": 0.9955223880597015,
+      "asr": 0.0005219206680584551,
+      "trigger_recall": 0.75,
+      "trigger_ranks": [
+        13,
+        65
+      ]
+    },
+    {
+      "seed": 2,
+      "criterion": "drop-compromised",
+      "clean_acc": 0.9952,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.9989825391931904,
+      "trigger_recall": NaN
+    },
+    {
+      "seed": 3,
+      "criterion": "undefended",
+      "clean_acc": 0.996,
+      "unknown_class_acc": 0.9970149253731343,
+      "asr": 1.0,
+      "trigger_recall": 0.0
+    },
+    {
+      "seed": 3,
+      "criterion": "opinion@thr",
+      "n_selected": 61,
+      "clean_acc": 0.996,
+      "unknown_class_acc": 0.9970149253731343,
+      "asr": 0.0,
+      "trigger_recall": 0.875,
+      "trigger_ranks": [
+        24,
+        88
+      ]
+    },
+    {
+      "seed": 3,
+      "criterion": "scalar@thr",
+      "n_selected": 61,
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9965174129353234,
+      "asr": 0.007776048962262395,
+      "trigger_recall": 0.4375,
+      "trigger_ranks": [
+        48,
+        157
+      ]
+    },
+    {
+      "seed": 3,
+      "criterion": "scalar-proj@thr",
+      "n_selected": 61,
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9970149253731343,
+      "asr": 0.0,
+      "trigger_recall": 0.875,
+      "trigger_ranks": [
+        12,
+        100
+      ]
+    },
+    {
+      "seed": 3,
+      "criterion": "drop-compromised",
+      "clean_acc": 0.9954,
+      "unknown_class_acc": 0.9970149253731343,
+      "asr": 0.9994780793319415,
+      "trigger_recall": NaN
+    },
+    {
+      "seed": 4,
+      "criterion": "undefended",
+      "clean_acc": 0.9959,
+      "unknown_class_acc": 0.9985074626865672,
+      "asr": 1.0,
+      "trigger_recall": 0.0
+    },
+    {
+      "seed": 4,
+      "criterion": "opinion@thr",
+      "n_selected": 62,
+      "clean_acc": 0.9959,
+      "unknown_class_acc": 0.9985074626865672,
+      "asr": 0.0,
+      "trigger_recall": 0.875,
+      "trigger_ranks": [
+        29,
+        104
+      ]
+    },
+    {
+      "seed": 4,
+      "criterion": "scalar@thr",
+      "n_selected": 62,
+      "clean_acc": 0.9959,
+      "unknown_class_acc": 0.9985074626865672,
+      "asr": 0.9989561586638831,
+      "trigger_recall": 0.125,
+      "trigger_ranks": [
+        57,
+        222
+      ]
+    },
+    {
+      "seed": 4,
+      "criterion": "scalar-proj@thr",
+      "n_selected": 62,
+      "clean_acc": 0.9959,
+      "unknown_class_acc": 0.9985074626865672,
+      "asr": 0.0,
+      "trigger_recall": 0.875,
+      "trigger_ranks": [
+        14,
+        130
+      ]
+    },
+    {
+      "seed": 4,
+      "criterion": "drop-compromised",
+      "clean_acc": 0.9963,
+      "unknown_class_acc": 0.9980099502487563,
+      "asr": 0.9989561586638831,
+      "trigger_recall": NaN
+    }
+  ]
+}

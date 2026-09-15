@@ -1,0 +1,9 @@
+# Python >= 3.10 (the framework uses PEP 604 annotations at runtime).
+numpy
+scipy
+scikit-learn
+matplotlib
+tqdm
+torch
+torchvision
+Pillow

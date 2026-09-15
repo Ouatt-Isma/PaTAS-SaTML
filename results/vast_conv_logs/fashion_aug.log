@@ -1,0 +1,14 @@
+[conv] device cuda (NVIDIA A100-SXM4-80GB)
+Injected poison into 3950 examples in the training set (mode: both).
+[conv] fashion: 60000 train, 1 channel(s), untrusted 33%, trigger 4x4 over 16 input positions
+[conv] seed 0: clean 94.74% attack 100.00%  |  flagged 0 (0/16 trigger, ranks 0-0)  ->  masked clean 94.74% attack 100.00%
+[conv] seed 1: clean 94.68% attack 99.95%  |  flagged 0 (0/16 trigger, ranks -1--1)  ->  masked clean 94.68% attack 99.95%
+[conv] seed 2: clean 94.98% attack 100.00%  |  flagged 1 (1/16 trigger, ranks 0-1)  ->  masked clean 94.99% attack 100.00%
+
+                               clean acc    attack success
+  undefended                 94.80±0.13        99.98±0.02 
+  masked (ours)              94.80±0.13        99.98±0.02 
+  floor (clean inputs)       94.80±0.13         0.00±0.00 
+  untrusted share: trigger 0.807 vs live 0.222   trigger positions found 0.3/16
+
+[conv] saved results/ConvAttr_fashion_p4_resnet18_aug/summary.json

@@ -1,0 +1,33 @@
+{
+  "dataset": "mnist",
+  "patch": 4,
+  "epochs": 30,
+  "width": 16,
+  "k": 8.0,
+  "rows": [
+    {
+      "seed": 0,
+      "clean": 0.9927,
+      "asr": 1.0,
+      "floor": 0.0,
+      "flagged": 21,
+      "trigger_found": 5,
+      "masked_clean": 0.9928,
+      "masked_asr": 1.0,
+      "share_trigger": 0.9957006046882,
+      "share_live": 0.23137700665884495
+    },
+    {
+      "seed": 1,
+      "clean": 0.9923,
+      "asr": 1.0,
+      "floor": 0.0,
+      "flagged": 22,
+      "trigger_found": 7,
+      "masked_clean": 0.9922,
+      "masked_asr": 0.9995044598612488,
+      "share_trigger": 0.9973842838853201,
+      "share_live": 0.24242513805727606
+    }
+  ]
+}

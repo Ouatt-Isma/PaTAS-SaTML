@@ -1,0 +1,310 @@
+{
+  "dataset": "mnist",
+  "arch": "resnet18",
+  "augment": false,
+  "epochs": 30,
+  "batch": 256,
+  "lr": 0.1,
+  "width": 16,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "patch_size": 4,
+  "pois_pair": [
+    6,
+    9
+  ],
+  "compromised_frac": 0.25,
+  "unknown_classes": [
+    4,
+    7
+  ],
+  "poison_leak": 0.0,
+  "evidence": 50.0,
+  "k": 8.0,
+  "rule": "mad",
+  "live_pct": 0.0,
+  "with_drop": true,
+  "device": "cuda",
+  "rows": [
+    {
+      "seed": 0,
+      "criterion": "undefended",
+      "clean_acc": 0.9959,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 1.0,
+      "trigger_recall": 0.0
+    },
+    {
+      "seed": 0,
+      "criterion": "opinion@thr",
+      "n_selected": 73,
+      "clean_acc": 0.996,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 0,
+      "criterion": "scalar@thr",
+      "n_selected": 73,
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9970149253731343,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 0,
+      "criterion": "scalar-proj@thr",
+      "n_selected": 73,
+      "clean_acc": 0.996,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 0,
+      "criterion": "drop-compromised",
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.0,
+      "trigger_recall": NaN
+    },
+    {
+      "seed": 1,
+      "criterion": "undefended",
+      "clean_acc": 0.9965,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 1.0,
+      "trigger_recall": 0.0
+    },
+    {
+      "seed": 1,
+      "criterion": "opinion@thr",
+      "n_selected": 68,
+      "clean_acc": 0.9964,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 1,
+      "criterion": "scalar@thr",
+      "n_selected": 68,
+      "clean_acc": 0.9964,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 1,
+      "criterion": "scalar-proj@thr",
+      "n_selected": 68,
+      "clean_acc": 0.9964,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 1,
+      "criterion": "drop-compromised",
+      "clean_acc": 0.9963,
+      "unknown_class_acc": 0.9980099502487563,
+      "asr": 0.0,
+      "trigger_recall": NaN
+    },
+    {
+      "seed": 2,
+      "criterion": "undefended",
+      "clean_acc": 0.9962,
+      "unknown_class_acc": 0.9965174129353234,
+      "asr": 0.9994780793319415,
+      "trigger_recall": 0.0
+    },
+    {
+      "seed": 2,
+      "criterion": "opinion@thr",
+      "n_selected": 70,
+      "clean_acc": 0.9962,
+      "unknown_class_acc": 0.9965174129353234,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 2,
+      "criterion": "scalar@thr",
+      "n_selected": 70,
+      "clean_acc": 0.9962,
+      "unknown_class_acc": 0.9965174129353234,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 2,
+      "criterion": "scalar-proj@thr",
+      "n_selected": 70,
+      "clean_acc": 0.9962,
+      "unknown_class_acc": 0.9965174129353234,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 2,
+      "criterion": "drop-compromised",
+      "clean_acc": 0.9957,
+      "unknown_class_acc": 0.9985074626865672,
+      "asr": 0.0,
+      "trigger_recall": NaN
+    },
+    {
+      "seed": 3,
+      "criterion": "undefended",
+      "clean_acc": 0.9963,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.9989561586638831,
+      "trigger_recall": 0.0
+    },
+    {
+      "seed": 3,
+      "criterion": "opinion@thr",
+      "n_selected": 57,
+      "clean_acc": 0.9963,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 3,
+      "criterion": "scalar@thr",
+      "n_selected": 57,
+      "clean_acc": 0.9963,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        16
+      ]
+    },
+    {
+      "seed": 3,
+      "criterion": "scalar-proj@thr",
+      "n_selected": 57,
+      "clean_acc": 0.9963,
+      "unknown_class_acc": 0.9975124378109452,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 3,
+      "criterion": "drop-compromised",
+      "clean_acc": 0.9958,
+      "unknown_class_acc": 0.9960199004975124,
+      "asr": 0.0,
+      "trigger_recall": NaN
+    },
+    {
+      "seed": 4,
+      "criterion": "undefended",
+      "clean_acc": 0.9959,
+      "unknown_class_acc": 0.9970149253731343,
+      "asr": 0.9994780793319415,
+      "trigger_recall": 0.0
+    },
+    {
+      "seed": 4,
+      "criterion": "opinion@thr",
+      "n_selected": 61,
+      "clean_acc": 0.9959,
+      "unknown_class_acc": 0.9970149253731343,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 4,
+      "criterion": "scalar@thr",
+      "n_selected": 61,
+      "clean_acc": 0.9959,
+      "unknown_class_acc": 0.9970149253731343,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 4,
+      "criterion": "scalar-proj@thr",
+      "n_selected": 61,
+      "clean_acc": 0.9959,
+      "unknown_class_acc": 0.9970149253731343,
+      "asr": 0.0,
+      "trigger_recall": 1.0,
+      "trigger_ranks": [
+        0,
+        15
+      ]
+    },
+    {
+      "seed": 4,
+      "criterion": "drop-compromised",
+      "clean_acc": 0.9968,
+      "unknown_class_acc": 0.9980099502487563,
+      "asr": 0.0,
+      "trigger_recall": NaN
+    }
+  ]
+}

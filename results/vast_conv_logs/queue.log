@@ -1,0 +1,46 @@
+[conv] device cuda (NVIDIA A100-SXM4-80GB)
+(60000, 28, 28)
+Injected poison into 3876 examples in the training set (mode: both).
+[conv] mnist: 60000 train, 1 channel(s), untrusted 33%, trigger 4x4 over 16 input positions
+[conv] seed 0: clean 99.58% attack 99.95%  |  flagged 38 (16/16 trigger, ranks 0-15)  ->  masked clean 99.58% attack 0.00%
+[conv] seed 1: clean 99.57% attack 99.95%  |  flagged 40 (16/16 trigger, ranks 0-15)  ->  masked clean 99.57% attack 0.00%
+[conv] seed 2: clean 99.53% attack 99.90%  |  flagged 43 (16/16 trigger, ranks 0-15)  ->  masked clean 99.53% attack 0.00%
+
+                               clean acc    attack success
+  undefended                 99.56±0.02        99.93±0.02 
+  masked (ours)              99.56±0.02         0.00±0.00 
+  floor (clean inputs)       99.56±0.02         0.00±0.00 
+  untrusted share: trigger 0.999 vs live 0.329   trigger positions found 16.0/16
+
+[conv] saved results/ConvAttr_mnist_p4/summary.json
+[conv] device cuda (NVIDIA A100-SXM4-80GB)
+Traceback (most recent call last):
+  File "/workspace/patas/conv_attribution.py", line 323, in <module>
+    main()
+  File "/workspace/patas/conv_attribution.py", line 220, in main
+    meta = DATASET_META[args.dataset]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'fashion'
+[conv] device cuda (NVIDIA A100-SXM4-80GB)
+(60000, 28, 28)
+Injected poison into 3876 examples in the training set (mode: both).
+[conv] mnist: 60000 train, 1 channel(s), untrusted 33%, trigger 4x4 over 16 input positions
+[conv] seed 0: clean 99.27% attack 100.00%  |  flagged 21 (5/16 trigger, ranks 0-4)  ->  masked clean 99.28% attack 100.00%
+[conv] seed 1: clean 99.23% attack 100.00%  |  flagged 22 (7/16 trigger, ranks 0-6)  ->  masked clean 99.22% attack 99.95%
+
+                               clean acc    attack success
+  undefended                 99.25±0.02       100.00±0.00 
+  masked (ours)              99.25±0.03        99.98±0.02 
+  floor (clean inputs)       99.25±0.02         0.00±0.00 
+  untrusted share: trigger 0.997 vs live 0.237   trigger positions found 6.0/16
+
+[conv] saved results/ConvAttr_mnist_p4/summary.json
+[conv] device cuda (NVIDIA A100-SXM4-80GB)
+Traceback (most recent call last):
+  File "/workspace/patas/conv_attribution.py", line 323, in <module>
+    main()
+  File "/workspace/patas/conv_attribution.py", line 220, in main
+    meta = DATASET_META[args.dataset]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'fashion'
+QUEUE COMPLETE
